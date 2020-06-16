@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>大事件-登录页</title>
   <!-- 导入LayUI样式文件 -->
   <link rel="stylesheet" type="text/css" href="./assets/lib/layui/css/layui.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
 </head>
+
 <body>
-  <div>登录页</div>
+  <!-- log区 -->
+  <div class='log'>
+    <img src="./assets/images/logo.png" alt="">
+  </div>
+  <!-- 登录区 -->
+  <div class='login'>
+    <img src="./assets/images/login_title.png" alt="">
+    <div class='bottom'>
+      <form class="layui-form" action="">
+        <!-- 第一行 -->
+        <div class="layui-form-item">
+            <i class="layui-icon layui-icon-username"></i>   
+            <input type="text" name="title" required lay-verify="required" placeholder="请输入账号" autocomplete="off"
+            class="layui-input">
   
+        </div>
+        <!-- 第二行 -->
+        <div class="layui-form-item">
+            <i class="layui-icon layui-icon-password"></i>   
+           <input type="text" name="title" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
+            class="layui-input">
   
+        </div>
+        <!-- 第三行 -->
+        <div class="layui-form-item">
+          <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">登陆</button>
+        </div>
+        <!-- 第四行 -->
+        <div class='left'>
+          去注册账号
+        </div>
+    </div>
+
+
+
+
+    </form>
+  </div>
+
+
 </body>
+
 </html>
